@@ -2,7 +2,7 @@ const pool = require('../_database/db');
 
 const getTodosModel = async () => {
 
-    const query = `SELECT * FROM todo_list`;
+    const query = `SELECT * FROM todo_list ORDER BY id DESC`;
 
     try {
         await pool.connect()

@@ -4,7 +4,7 @@ const server = http.createServer(app);
 
 // SERVER RUN RESPONSE
 app.get("/", (req, res) => {
-  res.send("Todo back-end server is running!");
+  res.send("server is running!");
 });
 
 const PORT = process.env.PORT || 7000;
